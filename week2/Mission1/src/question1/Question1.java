@@ -12,6 +12,7 @@ public class Question1 {
         //문자 출력
         for (int i = 0; i < character.length; i++) {
             System.out.println(character[i]);
+            System.out.println("lala");
         }
     }
 }
