@@ -19,6 +19,7 @@ public class Student {
     }
 
     int calculateSubjectNumber() {
+        System.out.println(gradeData);
         for(int i : gradeData.values()) {
             if (i != -1) numOfSubject++;
         }
@@ -38,5 +39,9 @@ public class Student {
 
     String getStudentInfo() {
         return studentName;
+    }
+
+    Map<String, Integer> getGradeData() {
+        return gradeData;
     }
 }
