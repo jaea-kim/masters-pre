@@ -6,7 +6,5 @@ public abstract class Coffee {
     public String getInfo() {
         return info;
     }
-    public void brewing() {
-        System.out.printf(info);
-    }
+    public abstract void brewing();
 }
