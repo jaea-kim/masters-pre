@@ -1,9 +1,12 @@
 package question2;
 
 public class HawaiiAmericano extends Coffee {
+    HawaiiAmericano() {
+        this.info = "HawaiiAmericano";
+    }
 
     @Override
-    public String getInfo() {
-        return "HawaiiAmericano";
+    public void brewing() {
+        System.out.printf("HawaiiAmericano");
     }
 }

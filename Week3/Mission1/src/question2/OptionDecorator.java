@@ -1,8 +1,6 @@
 package question2;
 
 public abstract class OptionDecorator extends Coffee {
-    protected Coffee coffee;
-    public OptionDecorator(Coffee coffee) {
-        this.coffee = coffee;
-    }
+    public abstract String getInfo();
+    public abstract void brewing();
 }
