@@ -6,6 +6,6 @@ public class DiamondMember extends Member {
         this.customerGrade = "DIAMOND";
         discountRate = 0.1;
         bonusRate = 0.1;
-        parkingFee = 0;
+        isCounselor = true;
     }
 }
