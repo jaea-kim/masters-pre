@@ -7,5 +7,6 @@ public class DiamondMember extends Member {
         discountRate = 0.1;
         bonusRate = 0.1;
         parkingFee = 0;
+        isCounselor = true;
     }
 }
