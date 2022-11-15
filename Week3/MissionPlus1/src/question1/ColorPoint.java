@@ -1,17 +1,21 @@
 package question1;
 
 public class ColorPoint extends Point {
-    private String color;
+    private String color = "BLACK";
 
-    ColorPoint() {super(0,0);}
-    ColorPoint(int x, int y) {super(x, y);}
+    ColorPoint() {
+        super(0,0);
+    }
+    ColorPoint(int x, int y) {
+        super(x,y);
+    }
     ColorPoint(int x, int y, String color) {
         super(x,y);
         this.color = color;
     }
 
     public void setXY(int x, int y) {
-        move(x, y);
+        move(x,y);
     }
 
     public void setColor(String color) {
@@ -20,6 +24,6 @@ public class ColorPoint extends Point {
 
     @Override
     public String toString() {
-        return color + "색의 (" + getX() + ", " + getY() + ")의 점";
+        return color + "색의 (" + getX() + "," + getY() + ")의 점";
     }
 }
