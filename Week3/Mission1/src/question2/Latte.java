@@ -1,19 +1,14 @@
 package question2;
 
-public class Latte extends Coffee {
-    private Coffee coffee;
+public class Latte extends OptionDecorator {
 
     public Latte(Coffee coffee) {
-        this.coffee = coffee;
+        super(coffee);
     }
 
     @Override
     public String getInfo() {
         return coffee.getInfo() + " Adding Milk";
-    }
-    @Override
-    public void brewing() {
-        System.out.printf(getInfo());
     }
 
 }
