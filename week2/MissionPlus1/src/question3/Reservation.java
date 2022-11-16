@@ -7,7 +7,6 @@ public class Reservation {
 
     public String printReservationInfo(int seatType) {
         String info = "";
-        System.out.println(seatType);
         for (String name : seatInfo[seatType]) {
             info += (name==null?"_":name);
             info += " ";
@@ -15,9 +14,10 @@ public class Reservation {
        return SEAT_TYPE_NAME[seatType] + "석: " + info;
     }
 
-    public void reservation(String name, int seatNum, int seatType) {
-        System.out.println("reservation");
+    public boolean reservation(String name, int seatNum, int seatType) {
+        if (seatInfo[seatType][seatNum] != null) return false;
         seatInfo[seatType][seatNum] = name;
+        return true;
     }
 
     public boolean cancel(String name) {
@@ -31,4 +31,5 @@ public class Reservation {
         }
         return false;
     }
+
 }
