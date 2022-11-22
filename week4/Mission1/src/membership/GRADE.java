@@ -1,4 +1,6 @@
 package membership;
 
-public class GRADE {
+public enum GRADE {
+    SILVER(), VIP(), PLATINUM();
+
 }

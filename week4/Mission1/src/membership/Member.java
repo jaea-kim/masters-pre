@@ -11,4 +11,13 @@ public class Member {
         this.grade = grade;
     }
 
+    @Override
+    public String toString() {
+        return name + "님의 아이디는 " + id + "이고 등급은 " + grade + "입니다";
+    }
+
+    public boolean isEqualId(int id) {
+        if (id == this.id) return true;
+        return false;
+    }
 }
