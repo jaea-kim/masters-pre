@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 public class MemberShipManagementSet {
     private HashSet<Member> memberSet;
-    public final String Line = "================================================";
+    private final String Line = "================================================";
 
     public MemberShipManagementSet() {
         memberSet = new HashSet<>();
