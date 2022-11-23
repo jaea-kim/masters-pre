@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 public class MemberShipManagementSet {
     private HashSet<Member> memberSet;
-    public final String Line = "===================";
+    public final String Line = "================================================";
 
     public MemberShipManagementSet() {
         memberSet = new HashSet<>();
@@ -28,7 +28,14 @@ public class MemberShipManagementSet {
     }
 
     public boolean removeMember(int id) {
-
+        for (Member member : memberSet) {
+            if(member.isEqualId(id)) {
+                memberSet.remove(member);
+                return true;
+            }
+        }
+        System.out.println(id + "에 해당하는 멤버가 없습니다.");
+        return false;
     }
 
 }

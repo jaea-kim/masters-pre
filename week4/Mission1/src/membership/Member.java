@@ -1,5 +1,7 @@
 package membership;
 
+import java.util.Objects;
+
 public class Member {
     private int id;
     private String name;
@@ -19,5 +21,15 @@ public class Member {
     public boolean isEqualId(int id) {
         if (id == this.id) return true;
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this.hashCode() == o.hashCode()) return true;
+        return true;
     }
 }
