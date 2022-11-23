@@ -29,7 +29,6 @@ public class Member {
     }
     @Override
     public boolean equals(Object o) {
-        if (this.hashCode() == o.hashCode()) return true;
-        return true;
+        return this.hashCode()==o.hashCode();
     }
 }
