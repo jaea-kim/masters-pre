@@ -29,6 +29,7 @@ public class Member {
     }
     @Override
     public boolean equals(Object o) {
+        System.out.println("equals");
         return this.hashCode()==o.hashCode();
     }
 }
